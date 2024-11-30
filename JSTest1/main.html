@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SudokuValidator</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h2>Завдання</h3>
+            <p>
+                Напишіть функцію validSolution(), яка отримує двовимірний масив, що представляє дошку Судоку,
+                і повертає true, якщо це правильний розв'язок, або false у протилежному випадку.
+                Клітинки дошки судоку також можуть містити 0, які означають порожні клітинки.
+                Дошки, що містять один або більше нулів, вважаються невірними розв'язками.
+            </p>
+            <p>Дошка завжди має розмір 9 клітинок на 9 клітинок, і кожна клітинка містить лише цілі числа від 0 до 9.</p>
+            <h2>Результат</h3>
+            <div class="container-mini">
+                <button onclick="buttonClick()">Check Solution</button>
+            </div>
+            <div class="container-mini">
+                <textarea id="solution" placeholder="Provide solution in 9*9 2d array format [[],[],[]...]"></textarea>
+                <table id="sudoku">
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+    
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+    
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                </table>
+                <p id="result"></p>
+            </div> 
+        </div>
+    </div>
+
+    <script src="SudokuValidator.js"></script>
+</body>
+</html>

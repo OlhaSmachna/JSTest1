@@ -1,0 +1,43 @@
+html, 
+body {
+    height: 100%;
+    margin: 0;
+}
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 70%;
+}
+.container-mini{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+p, button{
+    font-size: 14pt;
+}
+#sudoku{
+    border-collapse:collapse;
+    
+}
+#sudoku tr td{
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    text-align: center;
+}
+#result{
+    font-size: 18pt;
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 30px;
+}
+textarea{
+    min-width: 250px;
+    min-height: 250px;
+    margin-right: 30px;
+}
